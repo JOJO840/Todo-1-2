@@ -5,11 +5,13 @@ public class Person {
     private String firstName;
     private String lastName;
     private String email;
+    private static int counter = 0;
 
     public Person(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+        setFirstName(firstName);
+        setLastName(lastName);
+        setEmail(email);
+        this.id = ++counter;
     }
 
     public int getId() {
@@ -29,20 +31,28 @@ public class Person {
     }
 
     public void setFirstName(String firstName) {
+        if (firstName == null || firstName.trim().isEmpty()){
+            throw  new IllegalArgumentException("First name cannot be empty!");
+        }
         this.firstName = firstName;
     }
 
     public void setLastName(String lastName) {
+        if (lastName == null || lastName.trim().isEmpty()){
+            throw  new IllegalArgumentException("First name cannot be empty!");
+        }
         this.lastName = lastName;
     }
 
     public void setEmail(String email) {
+        if (email== null || !email.contains("@")){
+            throw  new IllegalArgumentException("requires @");
+        }
         this.email = email;
     }
 
-    public String getSummary(){
-        return getId() + getFirstName() + getLastName()  + getEmail();
+    public String getSummary() {
+        return "ID: " + id + ", Name: " + firstName + " " + lastName + ", Email: " + email;
     }
-
 
 }

@@ -3,13 +3,21 @@ package org.lexicon;
 import java.time.LocalDate;
 
 public class TodoItem {
-    private int id;
     private String title;
     private String taskDescription;
     private LocalDate deadLine;
     private boolean done;
     private Person creator;
+    private int id;
+    private static int counter = 0;
 
+    public TodoItem(String title, LocalDate deadLine, String taskDescription, Person creator) {
+        setTitle(title);
+        setTaskDescription(taskDescription);
+        setDeadLine(deadLine);
+        this.id = ++counter;
+
+    }
 
     public int getId() {
         return id;
@@ -32,6 +40,8 @@ public class TodoItem {
     }
 
     public void setTitle(String title) {
+        if (title == null || title.trim().isEmpty())
+            throw new IllegalArgumentException("Title cannot be empty.");
         this.title = title;
     }
 
@@ -40,10 +50,14 @@ public class TodoItem {
     }
 
     public void setDeadLine(LocalDate deadLine) {
+        if (deadLine == null || deadLine.isBefore(LocalDate.now()))
+            throw new IllegalArgumentException("Deadline must be in the future.");
         this.deadLine = deadLine;
     }
 
     public void setCreator(Person creator) {
+        if (creator == null)
+            throw new IllegalArgumentException("A task must have a creator.");
         this.creator = creator;
     }
 
@@ -52,15 +66,16 @@ public class TodoItem {
     }
 
     public boolean isDone(){
-        return false;
+        return done;
     }
 
     public boolean isOverdue(){
-        return false;
+        return LocalDate.now().isAfter(deadLine);
     }
 
-    public String getSummary(){
-        return "";
+    public String getSummary() {
+        return "Task ID: " + id + ", Title: " + title + ", Done: " + done + ", Overdue: " + isOverdue();
+
     }
 
 

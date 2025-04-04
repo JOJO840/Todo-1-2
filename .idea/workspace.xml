@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b657f14-55b7-453b-ab0e-45ad84147a6b" name="Changes" comment="testing branch">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" afterDir="false" />
+    <list default="true" id="9b657f14-55b7-453b-ab0e-45ad84147a6b" name="Changes" comment="assignment todo1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +54,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Todo1",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -81,7 +85,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1743689285356</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="assignment todo1">
+      <option name="closed" value="true" />
+      <created>1743755695424</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1743755695424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,7 +106,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="Todo1" />
                       </list>
                     </value>
                   </entry>
@@ -109,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing branch" />
+    <MESSAGE value="assignment todo1" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment todo1" />
   </component>
 </project>
