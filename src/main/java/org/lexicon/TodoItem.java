@@ -15,6 +15,7 @@ public class TodoItem {
         setTitle(title);
         setTaskDescription(taskDescription);
         setDeadLine(deadLine);
+        setCreator(creator);
         this.id = ++counter;
 
     }
@@ -40,8 +41,9 @@ public class TodoItem {
     }
 
     public void setTitle(String title) {
-        if (title == null || title.trim().isEmpty())
+        if (title == null || title.trim().isEmpty()) {
             throw new IllegalArgumentException("Title cannot be empty.");
+        }
         this.title = title;
     }
 
@@ -56,8 +58,9 @@ public class TodoItem {
     }
 
     public void setCreator(Person creator) {
-        if (creator == null)
+        if (creator == null) {
             throw new IllegalArgumentException("A task must have a creator.");
+        }
         this.creator = creator;
     }
 

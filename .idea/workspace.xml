@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b657f14-55b7-453b-ab0e-45ad84147a6b" name="Changes" comment="assignment todo1">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" afterDir="false" />
@@ -55,6 +57,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.PersonTest.executor": "Run",
+    "JUnit.PersonTest.testPersonCreation.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Todo1",
@@ -62,6 +66,77 @@
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.TodoItemTaskTest">
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.PersonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.testPersonCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.PersonTest" />
+      <option name="METHOD_NAME" value="testPersonCreation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.TodoItemTaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.TodoItemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TodoItemTaskTest" />
+        <item itemvalue="JUnit.TodoItemTest" />
+        <item itemvalue="JUnit.PersonTest" />
+        <item itemvalue="JUnit.PersonTest.testPersonCreation" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

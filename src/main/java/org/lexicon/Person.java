@@ -39,7 +39,7 @@ public class Person {
 
     public void setLastName(String lastName) {
         if (lastName == null || lastName.trim().isEmpty()){
-            throw  new IllegalArgumentException("First name cannot be empty!");
+            throw  new IllegalArgumentException("Last name cannot be empty!");
         }
         this.lastName = lastName;
     }
