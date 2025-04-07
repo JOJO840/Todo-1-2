@@ -1,15 +1,25 @@
+// TodoItem.java
 package org.lexicon;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class TodoItem {
-    private int id;
     private String title;
     private String taskDescription;
     private LocalDate deadLine;
     private boolean done;
     private Person creator;
+    private int id;
+    private static int counter = 0;
 
+    public TodoItem(String title, LocalDate deadLine, String taskDescription, Person creator) {
+        setTitle(title);
+        setTaskDescription(taskDescription);
+        setDeadLine(deadLine);
+        setCreator(creator);
+        this.id = ++counter;
+    }
 
     public int getId() {
         return id;
@@ -32,6 +42,9 @@ public class TodoItem {
     }
 
     public void setTitle(String title) {
+        if (title == null || title.trim().isEmpty()) {
+            throw new IllegalArgumentException("Title cannot be empty.");
+        }
         this.title = title;
     }
 
@@ -40,10 +53,16 @@ public class TodoItem {
     }
 
     public void setDeadLine(LocalDate deadLine) {
+        if (deadLine == null || deadLine.isBefore(LocalDate.now())) {
+            throw new IllegalArgumentException("Deadline must be in the future.");
+        }
         this.deadLine = deadLine;
     }
 
     public void setCreator(Person creator) {
+        if (creator == null) {
+            throw new IllegalArgumentException("A task must have a creator.");
+        }
         this.creator = creator;
     }
 
@@ -51,17 +70,39 @@ public class TodoItem {
         this.done = done;
     }
 
-    public boolean isDone(){
-        return false;
+    public boolean isDone() {
+        return done;
     }
 
-    public boolean isOverdue(){
-        return false;
+    public boolean isOverdue() {
+        return LocalDate.now().isAfter(deadLine);
     }
 
-    public String getSummary(){
-        return "";
+    @Override
+    public String toString() {
+        return "TodoItem{" +
+                "title='" + title + '\'' +
+                ", taskDescription='" + taskDescription + '\'' +
+                ", deadLine=" + deadLine +
+                ", done=" + done +
+                ", id=" + id +
+                '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TodoItem)) return false;
+        TodoItem todoItem = (TodoItem) o;
+        return done == todoItem.done &&
+                id == todoItem.id &&
+                Objects.equals(title, todoItem.title) &&
+                Objects.equals(taskDescription, todoItem.taskDescription) &&
+                Objects.equals(deadLine, todoItem.deadLine);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, taskDescription, deadLine, done, id);
+    }
 }
