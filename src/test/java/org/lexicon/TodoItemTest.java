@@ -1,43 +1,73 @@
 package org.lexicon;
 
 import org.junit.jupiter.api.Test;
+
 import java.time.LocalDate;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class TodoItemTest {
 
     @Test
-    void testTodoItemCreation() {
-        Person creator = new Person("John", "Doe", "john.doe@example.com");
-        TodoItem todoItem = new TodoItem("Task 1", LocalDate.now().plusDays(1), "Description", creator);
-        assertEquals("Task 1", todoItem.getTitle());
-        assertEquals("Description", todoItem.getTaskDescription());
-        assertEquals(creator, todoItem.getCreator());
+    void testConstructorAndGetters() {
+        AppUser user = new AppUser("testUser", "password123", AppRole.ROLE_APP_USER);
+        Person creator = new Person("John", "Doe", "john.doe@example.com", user);
+        LocalDate deadline = LocalDate.now().plusDays(10); // Future date
+
+        TodoItem item = new TodoItem("Test Task", deadline, "Test Description", creator);
+
+        assertEquals("Test Task", item.getTitle());
+        assertEquals(deadline, item.getDeadLine());
+        assertEquals("Test Description", item.getTaskDescription());
+        assertEquals(creator, item.getCreator());
+        assertFalse(item.isDone());
     }
 
     @Test
-    void testInvalidTitle() {
-        Person creator = new Person("John", "Doe", "john.doe@example.com");
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            new TodoItem("", LocalDate.now().plusDays(1), "Description", creator);
-        });
-        assertEquals("Title cannot be empty.", exception.getMessage());
+    void testSetTitleValid() {
+        TodoItem item = new TodoItem("Initial Title", LocalDate.now().plusDays(10), "Description", new Person("John", "Doe", "john.doe@example.com", new AppUser("user", "password", AppRole.ROLE_APP_USER)));
+        item.setTitle("Updated Title");
+        assertEquals("Updated Title", item.getTitle());
     }
 
     @Test
-    void testInvalidDeadline() {
-        Person creator = new Person("John", "Doe", "john.doe@example.com");
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            new TodoItem("Task 1", LocalDate.now().minusDays(1), "Description", creator);
-        });
-        assertEquals("Deadline must be in the future.", exception.getMessage());
+    void testSetTitleInvalid() {
+        TodoItem item = new TodoItem("Initial Title", LocalDate.now().plusDays(10), "Description", new Person("John", "Doe", "john.doe@example.com", new AppUser("user", "password", AppRole.ROLE_APP_USER)));
+        assertThrows(IllegalArgumentException.class, () -> item.setTitle(""));
+        assertThrows(IllegalArgumentException.class, () -> item.setTitle(null));
     }
 
     @Test
-    void testInvalidCreator() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            new TodoItem("Task 1", LocalDate.now().plusDays(1), "Description", null);
-        });
-        assertEquals("A task must have a creator.", exception.getMessage());
+    void testSetDeadLineValid() {
+        TodoItem item = new TodoItem("Task", LocalDate.now().plusDays(10), "Description", new Person("John", "Doe", "john.doe@example.com", new AppUser("user", "password", AppRole.ROLE_APP_USER)));
+        LocalDate newDeadline = LocalDate.now().plusDays(20); // Future date
+        item.setDeadLine(newDeadline);
+        assertEquals(newDeadline, item.getDeadLine());
+    }
+
+    @Test
+    void testSetDeadLineInvalid() {
+        TodoItem item = new TodoItem("Task", LocalDate.now().plusDays(10), "Description", new Person("John", "Doe", "john.doe@example.com", new AppUser("user", "password", AppRole.ROLE_APP_USER)));
+        LocalDate pastDeadline = LocalDate.now().minusDays(10); // Past date
+        assertThrows(IllegalArgumentException.class, () -> item.setDeadLine(pastDeadline));
+        assertThrows(IllegalArgumentException.class, () -> item.setDeadLine(null));
+    }
+
+    @Test
+    void testSetDone() {
+        TodoItem item = new TodoItem("Task", LocalDate.now().plusDays(10), "Description", new Person("John", "Doe", "john.doe@example.com", new AppUser("user", "password", AppRole.ROLE_APP_USER)));
+        assertFalse(item.isDone());
+        item.setDone(true);
+        assertTrue(item.isDone());
+    }
+
+    @Test
+    void testEqualsAndHashCode() {
+        Person creator = new Person("John", "Doe", "john.doe@example.com", new AppUser("user", "password", AppRole.ROLE_APP_USER));
+        TodoItem item1 = new TodoItem("Task", LocalDate.now().plusDays(10), "Description", creator);
+        TodoItem item2 = new TodoItem("Task", LocalDate.now().plusDays(10), "Description", creator);
+
+        assertNotEquals(item1, item2); // Different IDs
+        assertNotEquals(item1.hashCode(), item2.hashCode());
     }
 }

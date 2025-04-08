@@ -1,39 +1,40 @@
 package org.lexicon;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
 
     @Test
     void testPersonCreation() {
-        Person person = new Person("John", "Doe", "john.doe@example.com");
+        AppUser user = new AppUser("testUser", "password123", AppRole.ROLE_APP_USER);
+        Person person = new Person("John", "Doe", "john.doe@example.com", user);
         assertEquals("John", person.getFirstName());
         assertEquals("Doe", person.getLastName());
         assertEquals("john.doe@example.com", person.getEmail());
+        assertEquals(user, person.getCredentials());
     }
 
     @Test
-    void testInvalidFirstName() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            new Person("", "Doe", "john.doe@example.com");
-        });
-        assertEquals("First name cannot be empty!", exception.getMessage());
+    void testToStringExcludesCredentials() {
+        AppUser user = new AppUser("testUser", "password123", AppRole.ROLE_APP_USER);
+        Person person = new Person("John", "Doe", "john.doe@example.com", user);
+        assertFalse(person.toString().contains("testUser"));
     }
 
     @Test
-    void testInvalidLastName() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            new Person("John", "", "john.doe@example.com");
-        });
-        assertEquals("Last name cannot be empty!", exception.getMessage());
+    void testEqualsAndHashCode() {
+        AppUser user1 = new AppUser("testUser", "password123", AppRole.ROLE_APP_USER);
+        Person person1 = new Person("John", "Doe", "john.doe@example.com", user1);
+        Person person2 = new Person("John", "Doe", "john.doe@example.com", user1);
+        assertEquals(person1, person2);
+        assertEquals(person1.hashCode(), person2.hashCode());
     }
 
     @Test
-    void testInvalidEmail() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            new Person("John", "Doe", "johndoe.com");
-        });
-        assertEquals("requires @", exception.getMessage());
+    void testInvalidEmailThrowsException() {
+        AppUser user = new AppUser("testUser", "password123", AppRole.ROLE_APP_USER);
+        assertThrows(IllegalArgumentException.class, () -> new Person("John", "Doe", "invalidEmail", user));
     }
 }

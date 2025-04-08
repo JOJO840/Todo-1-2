@@ -34,7 +34,7 @@ public class TodoItemTask {
 
     public void setTask(TodoItem task) {
         if (task == null) {
-            throw new IllegalArgumentException("Task cannot be null.");
+            throw new IllegalArgumentException("TodoItem cannot be null.");
         }
         this.task = task;
     }
@@ -56,6 +56,7 @@ public class TodoItemTask {
         return "TodoItemTask{" +
                 "assigned=" + assigned +
                 ", task=" + task +
+                ", assignee=" + assignee +
                 ", id=" + id +
                 '}';
     }

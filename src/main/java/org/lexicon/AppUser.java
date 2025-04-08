@@ -7,14 +7,10 @@ public class AppUser {
     private String password;
     private AppRole role;
 
-    public AppUser(String username, String password, Person person, AppRole role) {
+    public AppUser(String username, String password, AppRole role) {
         setUsername(username);
         setPassword(password);
         setRole(role);
-
-        if (person == null) {
-            throw new IllegalArgumentException("Person cannot be null!");
-        }
 
     }
 
@@ -28,10 +24,6 @@ public class AppUser {
 
     public AppRole getRole() {
         return role;
-    }
-
-    public String getSummary() {
-        return "Username: " + username + " , Role: " + role.getRoleName();
     }
 
     public void setUsername(String username) {
@@ -55,10 +47,12 @@ public class AppUser {
         this.role = role;
     }
 
-
     @Override
     public String toString() {
-        return getSummary();
+        return "AppUser{" +
+                "username='" + username + '\'' +
+                ", role=" + role +
+                '}';
     }
 
     @Override
