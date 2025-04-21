@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b657f14-55b7-453b-ab0e-45ad84147a6b" name="Changes" comment="assignment todo1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/AppUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/AppUserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/PersonDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/TodoItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/TodoItemTaskDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/AppUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/PersonDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/TodoItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/TodoItemTaskDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/PersonIdSequencer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/TodoItemSequencer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/TodoItemTaskIdSequencer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/AppRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/AppRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/AppUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/TodoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/TodoItemTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/AppUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTaskTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Todo1" />
+        <entry key="$PROJECT_DIR$" value="Todo2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,33 +66,40 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2vDlpfvJoKlXqOWRTiF6OP0Q50y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.AppUserTest.executor": "Run",
-    "JUnit.AppUserTest.testAppUserCreation.executor": "Run",
-    "JUnit.PersonTest,testToStringExcludesCredentials and 1 more.executor": "Run",
-    "JUnit.PersonTest.executor": "Run",
-    "JUnit.PersonTest.testEqualsAndHashCode.executor": "Run",
-    "JUnit.PersonTest.testPersonCreation.executor": "Run",
-    "JUnit.TodoItemTaskTest.executor": "Run",
-    "JUnit.TodoItemTest.executor": "Run",
-    "JUnit.TodoItemTest.testIsOverdue.executor": "Run",
-    "JUnit.TodoItemTest.testTodoItemCreation.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Todo2",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppUserTest.testAppUserCreation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest,testToStringExcludesCredentials and 1 more.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.testEqualsAndHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.testPersonCreation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTaskTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTaskTest.testEqualsAndHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.testEqualsAndHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.testIsOverdue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.testTodoItemCreation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Todo3&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.TodoItemTest.testEqualsAndHashCode">
-    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.lexicon" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.Main" />
       <module name="Todo-1-2" />
       <extension name="coverage">
         <pattern>
@@ -88,9 +107,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.lexicon" />
-      <option name="MAIN_CLASS_NAME" value="org.lexicon.PersonTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,7 +115,7 @@
       <module name="Todo-1-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="PATTERN" value="org.lexicon.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,7 +130,7 @@
       <module name="Todo-1-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="PATTERN" value="org.lexicon.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,7 +146,7 @@
       <module name="Todo-1-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="PATTERN" value="org.lexicon.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,7 +161,7 @@
       <module name="Todo-1-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="PATTERN" value="org.lexicon.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TodoItemTest.testEqualsAndHashCode" />
         <item itemvalue="JUnit.TodoItemTaskTest.testEqualsAndHashCode" />
         <item itemvalue="JUnit.TodoItemTest" />
         <item itemvalue="JUnit.TodoItemTaskTest" />
-        <item itemvalue="JUnit.PersonTest" />
       </list>
     </recent_temporary>
   </component>

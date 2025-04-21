@@ -1,4 +1,6 @@
-package org.lexicon;
+package org.lexicon.model;
+
+import org.lexicon.dao.sequencer.PersonIdSequencer;
 
 import java.util.Objects;
 
@@ -8,14 +10,13 @@ public class Person {
     private String lastName;
     private String email;
     private AppUser credentials;
-    private static int counter = 0;
 
     public Person(String firstName, String lastName, String email, AppUser credentials) {
         setFirstName(firstName);
         setLastName(lastName);
         setEmail(email);
         setCredentials(credentials);
-        this.id = ++counter;
+        this.id = PersonIdSequencer.nextId();
     }
 
     public int getId() {

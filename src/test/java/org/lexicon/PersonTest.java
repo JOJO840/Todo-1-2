@@ -1,6 +1,9 @@
 package org.lexicon;
 
 import org.junit.jupiter.api.Test;
+import org.lexicon.model.AppRole;
+import org.lexicon.model.AppUser;
+import org.lexicon.model.Person;
 
 import static org.junit.jupiter.api.Assertions.*;
 

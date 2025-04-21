@@ -1,6 +1,7 @@
 package org.lexicon;
 
 import org.junit.jupiter.api.Test;
+import org.lexicon.model.*;
 
 import java.time.LocalDate;
 

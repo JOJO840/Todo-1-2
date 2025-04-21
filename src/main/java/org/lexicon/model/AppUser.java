@@ -1,4 +1,4 @@
-package org.lexicon;
+package org.lexicon.model;
 
 import java.util.Objects;
 

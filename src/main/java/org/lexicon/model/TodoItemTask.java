@@ -1,5 +1,7 @@
 // TodoItemTask.java
-package org.lexicon;
+package org.lexicon.model;
+
+import org.lexicon.dao.sequencer.TodoItemTaskIdSequencer;
 
 import java.util.Objects;
 
@@ -8,10 +10,9 @@ public class TodoItemTask {
     private TodoItem task;
     private Person assignee;
     private int id;
-    private static int counter;
 
     public TodoItemTask(TodoItem task, Person assignee) {
-        this.id = ++counter;
+        this.id = TodoItemTaskIdSequencer.nextId();
         setTask(task);
         setAssignee(assignee);
     }

@@ -1,5 +1,8 @@
 // TodoItem.java
-package org.lexicon;
+package org.lexicon.model;
+
+import org.lexicon.dao.sequencer.TodoItemSequencer;
+import org.lexicon.dao.sequencer.TodoItemTaskIdSequencer;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -11,14 +14,13 @@ public class TodoItem {
     private boolean done;
     private Person creator;
     private int id;
-    private static int counter = 0;
 
     public TodoItem(String title, LocalDate deadLine, String taskDescription, Person creator) {
+        this.id = TodoItemSequencer.nextId();
         setTitle(title);
         setTaskDescription(taskDescription);
         setDeadLine(deadLine);
         setCreator(creator);
-        this.id = ++counter;
     }
 
     public int getId() {
@@ -81,11 +83,11 @@ public class TodoItem {
     @Override
     public String toString() {
         return "TodoItem{" +
-                "title='" + title + '\'' +
+                "id= " + id +
+                ", title='" + title + '\'' +
                 ", taskDescription='" + taskDescription + '\'' +
                 ", deadLine=" + deadLine +
                 ", done=" + done +
-                ", id=" + id +
                 '}';
     }
 

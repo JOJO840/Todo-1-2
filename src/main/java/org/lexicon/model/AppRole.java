@@ -1,4 +1,4 @@
-package org.lexicon;
+package org.lexicon.model;
 
 public enum AppRole {
     ROLE_APP_USER("User "),
