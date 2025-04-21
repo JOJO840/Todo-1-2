@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b657f14-55b7-453b-ab0e-45ad84147a6b" name="Changes" comment="assignment todo1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/AppUserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/PersonDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/TodoItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/TodoItemTaskDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/AppUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/PersonDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/TodoItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/TodoItemTaskDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/PersonIdSequencer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/TodoItemSequencer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/TodoItemTaskIdSequencer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/AppRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/AppRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/TodoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/TodoItemTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/AppUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Todo2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JOJO840&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JOJO840/Todo-1-2.git&quot;,
+    &quot;accountId&quot;: &quot;d08395ff-2478-40d2-abb6-fc379dbe7c0b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2vDlpfvJoKlXqOWRTiF6OP0Q50y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppUserTest.testAppUserCreation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest,testToStringExcludesCredentials and 1 more.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.testEqualsAndHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.testPersonCreation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTaskTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTaskTest.testEqualsAndHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.testEqualsAndHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.testIsOverdue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoItemTest.testTodoItemCreation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Todo3&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.lexicon" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.Main" />
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.TodoItemTaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemTaskTest.testEqualsAndHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.TodoItemTaskTest" />
+      <option name="METHOD_NAME" value="testEqualsAndHashCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.TodoItemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoItemTest.testEqualsAndHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Todo-1-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lexicon.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lexicon" />
+      <option name="MAIN_CLASS_NAME" value="org.lexicon.TodoItemTest" />
+      <option name="METHOD_NAME" value="testEqualsAndHashCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TodoItemTest.testEqualsAndHashCode" />
+        <item itemvalue="JUnit.TodoItemTaskTest.testEqualsAndHashCode" />
+        <item itemvalue="JUnit.TodoItemTest" />
+        <item itemvalue="JUnit.TodoItemTaskTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b657f14-55b7-453b-ab0e-45ad84147a6b" name="Changes" comment="" />
+      <created>1743687718505</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743687718505</updated>
+    </task>
+    <task id="LOCAL−00001" summary="testing branch">
+      <option name="closed" value="true" />
+      <created>1743689085423</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1743689085423</updated>
+    </task>
+    <task id="LOCAL−00002" summary="testing branch">
+      <option name="closed" value="true" />
+      <created>1743689285356</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1743689285356</updated>
+    </task>
+    <task id="LOCAL−00003" summary="assignment todo1">
+      <option name="closed" value="true" />
+      <created>1743755695424</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1743755695424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Todo1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="testing branch" />
+    <MESSAGE value="assignment todo1" />
+    <MESSAGE value="assignment todo2" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment todo2" />
+  </component>
+</project>
