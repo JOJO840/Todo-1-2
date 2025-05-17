@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b657f14-55b7-453b-ab0e-45ad84147a6b" name="Changes" comment="assignment todo1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/AppUserDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/PersonDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/TodoItemDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/impl/TodoItemTaskDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/AppUserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/PersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/TodoItemDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/interfaces/TodoItemTaskDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/PersonIdSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/TodoItemSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/dao/sequencer/TodoItemTaskIdSequencer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/AppRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/AppRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/TodoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lexicon/model/TodoItemTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/AppUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lexicon/TodoItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +67,7 @@
     &quot;JUnit.TodoItemTest.testTodoItemCreation.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Todo3&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
